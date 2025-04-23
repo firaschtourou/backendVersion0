@@ -36,7 +36,7 @@ app.use(express.json());
 
 // Configuration CORS
 const corsOptions = {
-  origin: ["http://localhost:5173"], // Ajouter toutes les origines nécessaires
+  origin: ["http://localhost:5173", "https://sci-kids-77f48.web.app/","https://backendversion0.onrender.com"], // Ajouter toutes les origines nécessaires
   methods: ["GET", "POST", "PUT", "DELETE"], // Méthodes autorisées
   credentials: true, // Autorise les cookies et l'authentification
 };
