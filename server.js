@@ -74,6 +74,9 @@ app.get('/api/kids/classes/:name', getClassesByName);
 
 // Démarrage du serveur
 const PORT = process.env.PORT || 5000;
+app.get("/", (req, res) => {
+  res.send("✅ Backend Render is up and running!");
+});
 app.listen(PORT, () => {
   console.log(`Serveur en cours d'exécution sur http://localhost:${PORT}`);
 });
